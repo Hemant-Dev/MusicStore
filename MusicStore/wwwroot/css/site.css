@@ -1,0 +1,45 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+.hero-section {
+    height: 100vh;
+    background-image: url("../Images/HomePage/pexels-elviss-railijs-bitāns-1389429.jpg");
+    background-size: cover;
+    padding-top: 30vh;
+}
+
+
+.playlist-section {
+    height: 90vh;
+}
+
+.dynamic-playlist-column {
+    height: 80vh;
+}
+
+.testimonial-section {
+    height: 100vh;
+    background-image: url("../Images/HomePage/testimonial.jpg");
+    background-size: cover;
+    
+    padding-top: 5%;
+}
+
+

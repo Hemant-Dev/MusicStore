@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MusicStore</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MusicStore.styles.css" asp-append-version="true" />
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Music Valley</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li><a href="#" class="nav-item nav-link active">Home</a></li>
+                        <li><a href="#" class="nav-item nav-link ">About</a></li>
+                        <li><a href="#" class="nav-item nav-link ">Services</a></li>
+                        <li><a href="#" class="nav-item nav-link ">Contact</a></li>
+                    </ul>
+
+                    <div class="navbar-nav ms-auto">
+                        <a href="#" class="nav-item nav-link">Register</a>
+                        <a href="#" class="nav-item nav-link">Login</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid p-0 bg-dark">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+ 
+    <footer class="border-top border-danger footer text-muted bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022 Music Valley</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white">Terms of Use</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="#" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+   
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
