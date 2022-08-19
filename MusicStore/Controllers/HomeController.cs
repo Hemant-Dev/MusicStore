@@ -13,10 +13,17 @@ namespace MusicStore.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string genre)
         {
+            var genres = new List<Genre>
+            {
+                new Genre {Name="Horro"},
+                new Genre {Name="Comedy"},
+                new Genre {Name="Romantic"}
+
+            };
             
-            return View();
+            return View(genres);
         }
 
         public IActionResult Privacy()

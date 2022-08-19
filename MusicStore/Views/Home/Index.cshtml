@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<MusicStore.Models.Genre>;
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -29,6 +30,13 @@
                 </div>
                 <div class="col-md-8 bg-black dynamic-playlist-column">
                     @*Here dynamically we are going to show our playlists*@
+                        @*<h2 class="text-white">Title: @Model.Album.Title</h2>*@
+                        @foreach (var item in Model)
+                        {
+
+                            <h3>Genre: @item.Name</h3>
+                        }
+                        
                 </div>
             </div>
         </div>
